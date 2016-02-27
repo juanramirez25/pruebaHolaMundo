@@ -4,6 +4,7 @@ import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import beans.BeanSpring;
+import beans.BeanSpringWeb;
 
 public class PruebaSpring {
 
@@ -13,6 +14,9 @@ public class PruebaSpring {
 		BeanFactory factory = context;
 		BeanSpring miBean = (BeanSpring) factory.getBean("miBean");
 		System.out.println("Mensaje: " + miBean.getMensaje());
+		
+		BeanSpringWeb miBeanL = (BeanSpringWeb) factory.getBean("miBeanL");
+		System.out.println("Nota: " + miBeanL.getMensaje());
 	}
 
 }

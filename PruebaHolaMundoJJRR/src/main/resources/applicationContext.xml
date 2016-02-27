@@ -7,4 +7,8 @@
 		<property name="mensaje" value="Hola Mundo con Spring" />
 	</bean>
 	
+	<bean id="miBeanL" class="beans.BeanSpringWeb">
+		<property name="mensaje" value="Deje la pereza" />
+	</bean>
+	
 </beans>
